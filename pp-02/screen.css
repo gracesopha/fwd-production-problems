@@ -9,9 +9,19 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Begin site styles below */
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 23px; /* 18 / 16 = 1.125 */
-  line-height: 28px;
+  font-size: 22px; /*  22 / 16 = 1.375 */
+  line-height: 28px; /*  28 / 16 = 1.75 */
 }
+
+body {
+  background-color: green;
+}
+footer {
+   padding-top: 1em;
+}
+h1 {
+  font-size: 1.5em; /* 24 / 16 = 1.5 */
+  }
 
 /*
 
