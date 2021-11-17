@@ -3,17 +3,14 @@
   call outputs the correct value (5) for x. You must still use
   `x` as the variable inside the function, however.
 */
-let num = 5;
 
-function double(num) {
+/* function double(num) {
   var x = num * 2;
   return x;
-  console.log(x);
 }
 
 double(5);
-console.log('The value of x is', x, '-- it should be 5.');
-
+console.log('The value of x is', x, '-- it should be 5.'); */
 /*
   Step 2. Rewrite the JavaScript `double()` function above so that
   it does not pollute the global namespace: that is, neither its
@@ -23,7 +20,17 @@ console.log('The value of x is', x, '-- it should be 5.');
   Be sure to comment out the original `double()` function so you
   can accurately test your work.
 */
-
+  double = function(num) {
+    if (num !== 'number') {
+      return 'not a number';
+    }
+    else {
+      var x = num*2;
+      return x;
+    }
+  }
+  double(5);
+  console.log('The value of x is', x, '-- it should be 5.'); */
 
 /*
   Step 3. Rewrite your corrected `double()` function from Step 2.
